@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*Обертка*/
+.wrapper{
+    width: 60%;
+    margin: auto;  
+}
+/* Header*/
+header{
+    background-color: #EEEFF1;
+    padding-bottom: 146px;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 0;
+    margin-bottom: 140px;
+    width: 60%;
+    margin: auto; 
+}
+.header-label{
+    display: flex;
+    justify-content: flex-start;
+}
+.header-menu a{
+font-weight: 500;
+font-size: 16px;
+color:#000000;
+text-decoration: none;
+}
+.header-menu a:hover{
+    color: #34547A;
+}
+.header-menu a:not(:last-child){
+    margin-right: 42px;
+}
+.info-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 78px
+}
+.info-text-wrapper{
+    margin-left: 130px;
+    width: 50%;
+}
+h1{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.info-text{
+    color: #727272;
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.info-button{
+    background-color: #34547A;
+    color: #FFFFFF;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 25px;
+    width: 225px;
+}
+/* Обо мне */
+.about-me {
+    width: 50%;
+    padding: 120px 0;
+    margin: 0 auto;
+}
+.about-me-information {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.about-me-text {
+    color:#727272;
+    line-height: 26px;
+    text-align: center;
+}
+/*Проекты 40*/
+.projects40{
+    background-color: #34547A; 
+    padding: 100px 0;
+}
+.projects-40-wrapper{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;  
+}
+.projects-40-wrapper-image{
+    display: flex;  
+}
+.image40{
+    margin-right: 20px;
+}
+.projects-40-text-wrapper{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.firsttext{
+    font-weight: 500;
+    font-size: 21px;
+    color: #fff;
+}
+.secondtext{
+color: #fff;
+}
+/*мои навыки*/
+.skills{
+    padding: 100px 0; /*первое верх них, второе лево право*/
+}
+.skills-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info{
+    width: 40%;
+}
+.skills-title{
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.skill-scale:not(:last-child){
+    margin-bottom: 30px;
+}
+.skill-name{
+    color: #727272;
+    margin-bottom: 20px;
+}
+.skill-scale-outer{
+    height: 4px;
+    background-color: #C4C4C4;
+}
+.skill-scale-inner{
+    height: 100%;
+    width: 70%;
+    background-color: #34547A;
+}
+.skills-img{
+    display: block; /*так как картинка не блочный элемент*/
+    width: 50%;
+}
+/*Как я работаю*/
+.process{
+    padding: 100px 0;
+    background-color: #EEEFF1;
+}
+.process-title{
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+.process-descr{
+    width: 50%;
+    margin: 50px auto 60px; /*top right-left bottom*/
+    color: #727272;
+    text-align: center;
+}
+.process-video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+/*Projects*/
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item{
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: cover; /*масштабирует картинку, чтобы не растягивалась*/
+}
+.sticker{
+    background-image: url(./images/sticker.png);
+}
+.laptop{
+    background-image: url(./images/laptop.png);
+}
+.projects-item-inner{
+    height: 100%; /*на всю высоту блока*/
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0; /*прозрачность блока. 0 -прозрачный невидимый, 0.5 - наполовину*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-item-inner:hover{
+    opacity: 1;
+}
+/*Microsoft*/
+.microsofts-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.microsoft:not(:last-child){
+    margin-right: 30px;
+}
+/*Форма*/
+.form{
+    background-color: #EEEFF1;
+    padding: 100px 0;
+}
+.form-wrapper{
+    width: 28%;
+    margin: auto;
+}
+.form-title{
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+.form-descr{
+    color: #727272;
+    margin: 50px 0 65px;
+    text-align: center;
+    line-height: 26px;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+}
+input[name="name"], input[name="email"]{
+    width: 45%;
+    padding: 20px;
+    border: none; /*убираем границы элемента input*/
+    outline: none;/*убираем границы элемента при нажатии на input*/
+}
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 20px 0 50px;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    padding: 20px 45px;
+    background-color: #34547A;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+}
+/* Footer */
+footer{
+    background-color: #34547A;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    width: 60%;
+    margin: auto;
+}
+.footer-name{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.footer-text{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+}
+.footer-icon:not(:last-child){
+   margin-right: 21px;
+}
+
+
+/*border:1px solid black - граница толщина стиль цвет, чтобы понимать что где привенить ко всему в первом пункте*/
+/*<video src="./video/video.mp4" - если видео на компьютере*/
+
